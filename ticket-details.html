@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Details | TechSupport</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="brand">
+        <span class="brand-icon">TS</span>
+        <span class="brand-name">TechSupport</span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="create-ticket.html">Create Ticket</a>
+        <a href="knowledge-base.html">Knowledge Base</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="nav-actions">
+        <button id="languageToggle" class="nav-btn">AR</button>
+        <button id="themeToggle" class="nav-btn">☾</button>
+    </div>
+
+</header>
+
+
+<main class="details-page">
+
+    <div class="page-heading">
+
+        <div>
+
+            <span class="hero-badge">
+                Ticket Details
+            </span>
+
+            <h1 id="detailsTitle">
+                Ticket Details
+            </h1>
+
+            <p id="detailsId">
+                Ticket
+            </p>
+
+        </div>
+
+        <a
+            href="dashboard.html"
+            class="btn btn-outline">
+            Back to Dashboard
+        </a>
+
+    </div>
+
+
+    <div class="details-layout">
+
+        <section class="details-card">
+
+            <h2>Problem Description</h2>
+
+            <p id="detailsDescription">
+                -
+            </p>
+
+
+            <div class="details-divider"></div>
+
+
+            <h2>User Information</h2>
+
+            <div class="details-grid">
+
+                <div>
+                    <small>Name</small>
+                    <strong id="detailsName">-</strong>
+                </div>
+
+                <div>
+                    <small>Email</small>
+                    <strong id="detailsEmail">-</strong>
+                </div>
+
+            </div>
+
+
+            <div class="details-divider"></div>
+
+
+            <h2>Ticket Information</h2>
+
+            <div class="details-grid">
+
+                <div>
+                    <small>Category</small>
+                    <strong id="detailsCategory">-</strong>
+                </div>
+
+                <div>
+                    <small>Priority</small>
+                    <strong id="detailsPriority">-</strong>
+                </div>
+
+                <div>
+                    <small>Date</small>
+                    <strong id="detailsDate">-</strong>
+                </div>
+
+                <div>
+                    <small>Status</small>
+                    <strong id="detailsStatus">-</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <aside class="details-side">
+
+            <h2>Ticket Status</h2>
+
+            <div
+                id="statusDisplay"
+                class="ticket-status">
+                New
+            </div>
+
+            <p>
+                You can change the ticket status
+                from the dashboard.
+            </p>
+
+            <a
+                href="dashboard.html"
+                class="btn btn-primary">
+                Dashboard
+            </a>
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <p> TechSupport</p>
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

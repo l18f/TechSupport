@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | TechSupport</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="brand">
+        <span class="brand-icon">TS</span>
+        <span class="brand-name">TechSupport</span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="create-ticket.html">Create Ticket</a>
+        <a href="knowledge-base.html">Knowledge Base</a>
+        <a href="contact.html" class="active">Contact Us</a>
+    </nav>
+
+    <div class="nav-actions">
+        <button id="languageToggle" class="nav-btn">AR</button>
+        <button id="themeToggle" class="nav-btn">☾</button>
+    </div>
+
+</header>
+
+
+<main class="form-page">
+
+    <div class="form-header">
+
+        <span class="hero-badge">
+            Contact Us
+        </span>
+
+        <h1>
+            Get In Touch
+        </h1>
+
+        <p>
+            Our support team is ready to help you.
+        </p>
+
+    </div>
+
+
+    <form id="contactForm" class="main-form">
+
+        <label>Name</label>
+
+        <input
+            type="text"
+            id="contactName"
+            required>
+
+
+        <label>Email</label>
+
+        <input
+            type="email"
+            id="contactEmail"
+            required>
+
+
+        <label>Subject</label>
+
+        <input
+            type="text"
+            id="contactSubject"
+            required>
+
+
+        <label>Message</label>
+
+        <textarea
+            id="contactMessage"
+            rows="7"
+            required></textarea>
+
+
+        <button
+            type="submit"
+            class="btn btn-primary">
+            Send Message
+        </button>
+
+    </form>
+
+</main>
+
+
+<footer>
+    <p> TechSupport</p>
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In | TechSupport</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-body">
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header class="navbar login-navbar">
+
+        <div class="logo">
+            <span class="logo-icon">TS</span>
+
+            <div>
+                <h2>TechSupport</h2>
+                <small>Technical Support System</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-ticket.html">Create Ticket</a>
+            <a href="knowledge-base.html">Knowledge Base</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="languageToggle" class="nav-btn">AR</button>
+            <button id="themeToggle" class="nav-btn">☀</button>
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         LOGIN SECTION
+    ========================== -->
+    <main class="login-page">
+
+        <div class="login-wrapper">
+
+            <!-- =====================
+                 LEFT ILLUSTRATION
+            ====================== -->
+            <section class="login-visual">
+
+                <div class="visual-circle"></div>
+
+                <div class="floating-card shield-card">
+                    <span>🛡</span>
+                </div>
+
+                <div class="floating-card dots-card">
+                    <span>•••</span>
+                </div>
+
+                <div class="laptop">
+
+                    <div class="laptop-screen">
+
+                        <div class="screen-user">
+                            <div class="user-head"></div>
+                            <div class="user-body"></div>
+                        </div>
+
+                        <div class="password-bar">
+                            <span>●</span>
+                            <span>●</span>
+                            <span>●</span>
+                            <span>●</span>
+                            <span>●</span>
+                        </div>
+
+                        <div class="lock-icon">
+                            🔒
+                        </div>
+
+                    </div>
+
+                    <div class="laptop-base"></div>
+
+                </div>
+
+                <div class="visual-leaf">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 LOGIN CARD
+            ====================== -->
+            <section class="login-card">
+
+                <!-- Logo -->
+                <div class="login-brand">
+
+                    <span class="login-brand-icon">TS</span>
+
+                    <div>
+                        <h2>TechSupport</h2>
+                        <p>Technical Support System</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Heading -->
+                <div class="login-heading">
+
+                    <h1>Sign In</h1>
+
+                    <p>
+                        Welcome back! Please enter your details
+                        to continue.
+                    </p>
+
+                </div>
+
+
+                <!-- Login Form -->
+                <form id="loginForm">
+
+                    <!-- Username -->
+                    <div class="login-field">
+
+                        <label for="username">
+                            Username
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">♙</span>
+
+                            <input
+                                type="text"
+                                id="username"
+                                placeholder="Enter your username"
+                                autocomplete="username"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="login-field">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">🔒</span>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="passwordToggle"
+                                aria-label="Show password">
+                                ◉
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button
+                        type="submit"
+                        class="login-submit">
+
+                        <span>Sign In</span>
+
+                        <span class="login-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+                </form>
+
+
+                <!-- Demo Account -->
+                <div class="demo-login">
+
+                    <div class="demo-icon">
+                        i
+                    </div>
+
+                    <div class="demo-content">
+
+                        <strong>Demo Account</strong>
+
+                        <p>
+                            Username:
+                            <b>admin</b>
+                        </p>
+
+                        <p>
+                            Password:
+                            <b>1234</b>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Back -->
+                <a href="index.html" class="back-home">
+                    <span>←</span>
+                    Back to Home
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="login-footer">
+
+        <p>
+           TechSupport 
+        </p>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+
+    <!-- Password Toggle -->
+    <script>
+
+        const passwordToggle =
+            document.getElementById("passwordToggle");
+
+        const passwordInput =
+            document.getElementById("password");
+
+        if (passwordToggle && passwordInput) {
+
+            passwordToggle.addEventListener("click", function () {
+
+                if (passwordInput.type === "password") {
+
+                    passwordInput.type = "text";
+
+                    passwordToggle.textContent = "◉";
+
+                } else {
+
+                    passwordInput.type = "password";
+
+                    passwordToggle.textContent = "◉";
+
+                }
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>

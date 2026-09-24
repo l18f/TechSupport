@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | TechSupport</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="brand">
+        <span class="brand-icon">TS</span>
+        <span class="brand-name">TechSupport</span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="index.html" data-i18n="home">Home</a>
+        <a href="dashboard.html" class="active" data-i18n="dashboard">Dashboard</a>
+        <a href="create-ticket.html" data-i18n="createTicket">Create Ticket</a>
+        <a href="knowledge-base.html" data-i18n="knowledge">Knowledge Base</a>
+        <a href="contact.html" data-i18n="contact">Contact Us</a>
+    </nav>
+
+    <div class="nav-actions">
+        <button id="languageToggle" class="nav-btn">AR</button>
+        <button id="themeToggle" class="nav-btn">☾</button>
+        <button id="logoutButton" class="logout-btn">Logout</button>
+    </div>
+
+</header>
+
+
+<main class="dashboard-page">
+
+    <div class="page-heading">
+        <div>
+            <span class="hero-badge">TechSupport</span>
+            <h1 data-i18n="dashboardTitle">Support Dashboard</h1>
+            <p data-i18n="dashboardSubtitle">
+                Manage and track all support tickets
+            </p>
+        </div>
+
+        <a href="create-ticket.html"
+           class="btn btn-primary"
+           data-i18n="createNewTicket">
+            Create New Ticket
+        </a>
+    </div>
+
+
+    <!-- Statistics -->
+
+    <section class="dashboard-stats">
+
+        <div class="dashboard-stat total">
+            <span class="dashboard-stat-icon">▤</span>
+            <div>
+                <small>Total Tickets</small>
+                <strong id="dashboardTotal">12</strong>
+            </div>
+        </div>
+
+        <div class="dashboard-stat new">
+            <span class="dashboard-stat-icon">+</span>
+            <div>
+                <small>New</small>
+                <strong id="dashboardNew">4</strong>
+            </div>
+        </div>
+
+        <div class="dashboard-stat progress">
+            <span class="dashboard-stat-icon">◷</span>
+            <div>
+                <small>In Progress</small>
+                <strong id="dashboardProgress">5</strong>
+            </div>
+        </div>
+
+        <div class="dashboard-stat completed">
+            <span class="dashboard-stat-icon">✓</span>
+            <div>
+                <small>Completed</small>
+                <strong id="dashboardCompleted">3</strong>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Tickets -->
+
+    <section class="tickets-panel">
+
+        <div class="panel-header">
+
+            <div>
+                <h2 data-i18n="latestTickets">Latest Tickets</h2>
+                <p>Track your support requests</p>
+            </div>
+
+            <div class="ticket-search">
+                <input
+                    type="text"
+                    id="ticketSearch"
+                    placeholder="Search tickets...">
+            </div>
+
+        </div>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Subject</th>
+                        <th>Status</th>
+                        <th>Priority</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="ticketsTable"></tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p> TechSupport</p>
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

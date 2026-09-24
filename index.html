@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechSupport</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="brand">
+
+        <span class="brand-icon">TS</span>
+
+        <span class="brand-name">
+            TechSupport
+        </span>
+
+    </a>
+
+
+    <nav class="main-nav">
+
+        <a href="index.html" class="active" data-i18n="home">
+            Home
+        </a>
+
+        <a href="dashboard.html" data-i18n="dashboard">
+            Dashboard
+        </a>
+
+        <a href="create-ticket.html" data-i18n="createTicket">
+            Create Ticket
+        </a>
+
+        <a href="knowledge-base.html" data-i18n="knowledge">
+            Knowledge Base
+        </a>
+
+        <a href="contact.html" data-i18n="contact">
+            Contact Us
+        </a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+    <a href="login.html" class="login-nav-btn">
+        Sign In
+    </a>
+
+    <button id="languageToggle" class="nav-btn">
+        AR
+    </button>
+
+    <button id="themeToggle" class="nav-btn">
+        ☀
+    </button>
+
+</div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-badge" data-i18n="badge">
+            Your Technical Support Partner
+        </span>
+
+
+        <h1 data-i18n="heroTitle">
+            Technical Support System
+        </h1>
+
+
+        <h2 data-i18n="heroSubtitle">
+            Manage your support tickets easily
+        </h2>
+
+
+        <p data-i18n="heroText">
+            We are here to help you solve your technical issues
+            as quickly as possible with a specialized support team,
+            always by your side.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="create-ticket.html"
+                class="btn btn-primary"
+                data-i18n="createNewTicket">
+                Create New Ticket
+            </a>
+
+            <a
+                href="knowledge-base.html"
+                class="btn btn-outline"
+                data-i18n="knowledge">
+                Knowledge Base
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- LAPTOP -->
+
+    <div class="laptop-area">
+
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+
+        <div class="chat-bubble bubble-one">
+            •••
+        </div>
+
+
+        <div class="plant plant-left">
+            🌿
+        </div>
+
+
+        <div class="laptop">
+
+            <div class="laptop-screen">
+
+                <div class="screen-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="screen-content">
+
+                    <div class="screen-line big"></div>
+                    <div class="screen-line"></div>
+                    <div class="screen-line"></div>
+
+                    <div class="screen-card">
+
+                        <div class="headphone">
+                            🎧
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="laptop-base">
+
+                <div class="keyboard"></div>
+
+                <div class="touchpad"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="chat-bubble bubble-two">
+            💬
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="statistics-section">
+
+    <div class="section-heading">
+        <h2 data-i18n="supportStatistics">
+            Support Statistics
+        </h2>
+    </div>
+
+
+    <div class="stats-grid">
+
+        <div class="stat-card completed">
+
+            <div class="stat-icon">
+                ✓
+            </div>
+
+            <div>
+                <span data-i18n="completed">
+                    Completed
+                </span>
+
+                <strong id="completedCount">
+                    3
+                </strong>
+
+                <small data-i18n="completedTickets">
+                    Completed Tickets
+                </small>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card progress">
+
+            <div class="stat-icon">
+                ◷
+            </div>
+
+            <div>
+                <span data-i18n="inProgress">
+                    In Progress
+                </span>
+
+                <strong id="progressCount">
+                    5
+                </strong>
+
+                <small data-i18n="progressTickets">
+                    In Progress Tickets
+                </small>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card new">
+
+            <div class="stat-icon">
+                +
+            </div>
+
+            <div>
+                <span data-i18n="new">
+                    New
+                </span>
+
+                <strong id="newCount">
+                    4
+                </strong>
+
+                <small data-i18n="newTickets">
+                    New Tickets
+                </small>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card total">
+
+            <div class="stat-icon">
+                ▤
+            </div>
+
+            <div>
+                <span data-i18n="totalTickets">
+                    Total Tickets
+                </span>
+
+                <strong id="totalCount">
+                    12
+                </strong>
+
+                <small data-i18n="totalTickets">
+                    Total Tickets
+                </small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        TechSupport
+    </p>
+
+</footer>
+
+</main>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
