@@ -6,7 +6,7 @@ A web-based technical support system for creating, managing, searching, and trac
 
 TechSupport is a simple web-based technical support system designed to help users submit technical support tickets and allow support staff to manage and track them easily.
 
-This project was developed as a graduation project for the Computer Technical Support specialization.
+
 
 ## Features
 
